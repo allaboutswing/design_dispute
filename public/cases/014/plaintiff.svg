@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="40" fill="#F4F7FB"/>
+  <rect x="34" y="34" width="1132" height="832" rx="34" fill="white" stroke="#D8E4F8" stroke-width="2"/>
+  <rect x="84" y="84" width="180" height="46" rx="23" fill="#E8F0FF"/>
+  <text x="174" y="114" text-anchor="middle" fill="#315EFB" font-family="Arial, sans-serif" font-size="22" font-weight="700">PLAINTIFF</text>
+  <text x="84" y="200" fill="#0F172A" font-family="Arial, sans-serif" font-size="42" font-weight="700">CASE IMAGE</text>
+  <text x="84" y="246" fill="#475569" font-family="Arial, sans-serif" font-size="24">014</text>
+  <rect x="84" y="300" width="1032" height="480" rx="32" fill="#F7FAFF" stroke="#D8E4F8" stroke-width="2"/>
+  <rect x="138" y="360" width="260" height="250" rx="28" fill="white" stroke="#D8E4F8" stroke-width="2"/>
+  <rect x="470" y="360" width="260" height="250" rx="28" fill="white" stroke="#D8E4F8" stroke-width="2"/>
+  <rect x="802" y="360" width="260" height="250" rx="28" fill="white" stroke="#D8E4F8" stroke-width="2"/>
+  <circle cx="268" cy="465" r="72" fill="#E8F0FF"/>
+  <circle cx="600" cy="465" r="72" fill="#E8F0FF"/>
+  <rect x="878" y="393" width="108" height="144" rx="24" fill="#E8F0FF"/>
+  <path d="M208 563H328" stroke="#315EFB" stroke-width="18" stroke-linecap="round"/>
+  <path d="M540 563H660" stroke="#315EFB" stroke-width="18" stroke-linecap="round"/>
+  <path d="M872 563H992" stroke="#315EFB" stroke-width="18" stroke-linecap="round"/>
+  <text x="84" y="834" fill="#315EFB" font-family="Arial, sans-serif" font-size="28" font-weight="700">IMAGE PREVIEW</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="36" fill="#F8FAFC"/>
+  <rect x="48" y="48" width="1104" height="704" rx="28" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="96" y="96" width="180" height="44" rx="22" fill="#E0E7FF"/>
+  <text x="186" y="125" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="22" fill="#4338CA">피고 디자인</text>
+  <text x="96" y="220" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="54" font-weight="700" fill="#0F172A">시안용 플레이스홀더</text>
+  <text x="96" y="276" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">실제 서비스 단계에서는 사건별</text>
+  <text x="96" y="318" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">원고·피고 도판을 분리해 교체합니다.</text>
+  <rect x="96" y="392" width="300" height="240" rx="24" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2"/>
+  <rect x="446" y="392" width="300" height="240" rx="24" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2"/>
+  <rect x="796" y="392" width="260" height="240" rx="24" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="10 10"/>
+  <rect x="136" y="444" width="220" height="22" rx="11" fill="#818CF8"/>
+  <rect x="136" y="486" width="180" height="18" rx="9" fill="#C7D2FE"/>
+  <rect x="136" y="520" width="150" height="18" rx="9" fill="#C7D2FE"/>
+  <rect x="486" y="444" width="220" height="22" rx="11" fill="#6366F1"/>
+  <rect x="486" y="486" width="180" height="18" rx="9" fill="#C7D2FE"/>
+  <rect x="486" y="520" width="150" height="18" rx="9" fill="#C7D2FE"/>
+  <text x="926" y="514" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#64748B">도판 대기</text>
+</svg>

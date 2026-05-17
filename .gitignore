@@ -1,0 +1,14 @@
+node_modules/
+.next/
+*.log
+
+# Local source and OCR artifacts
+source/
+public/pages/
+data/ocr-batches/
+data/ocr-pages.json
+data/cases.generated.json
+
+# OS/editor
+.DS_Store
+Thumbs.db

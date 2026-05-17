@@ -1,0 +1,15 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="36" fill="#F8FAFC"/>
+  <rect x="48" y="48" width="1104" height="704" rx="28" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="96" y="96" width="176" height="44" rx="22" fill="#FEF3C7"/>
+  <text x="184" y="125" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="22" fill="#B45309">비교 이미지</text>
+  <text x="96" y="220" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="54" font-weight="700" fill="#0F172A">비교 도판 준비 중</text>
+  <text x="96" y="276" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">원고·피고 핵심 형상 비교 이미지는</text>
+  <text x="96" y="318" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">OCR 이후 개별 도판 정리 단계에서 연결됩니다.</text>
+  <rect x="120" y="392" width="340" height="220" rx="28" fill="#FFF7ED" stroke="#FED7AA" stroke-width="2"/>
+  <rect x="740" y="392" width="340" height="220" rx="28" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M510 502H690" stroke="#94A3B8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M640 450L700 502L640 554" stroke="#315EFB" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="290" y="514" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="34" fill="#9A3412">원고 측</text>
+  <text x="910" y="514" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="34" fill="#334155">피고 측</text>
+</svg>

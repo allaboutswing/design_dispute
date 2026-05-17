@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="36" fill="#F8FAFC"/>
+  <rect x="48" y="48" width="1104" height="704" rx="28" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="96" y="96" width="180" height="44" rx="22" fill="#DBEAFE"/>
+  <text x="186" y="125" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="22" fill="#1D4ED8">원고 디자인</text>
+  <text x="96" y="220" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="54" font-weight="700" fill="#0F172A">원문 이미지 정리 중</text>
+  <text x="96" y="276" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">샘플 단계에서는 실제 분쟁 도판 대신</text>
+  <text x="96" y="318" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" fill="#475569">구조와 레이아웃 중심으로 화면을 구성했습니다.</text>
+  <rect x="96" y="392" width="420" height="240" rx="24" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="2"/>
+  <circle cx="220" cy="512" r="58" fill="#93C5FD"/>
+  <rect x="310" y="450" width="150" height="28" rx="14" fill="#60A5FA"/>
+  <rect x="310" y="498" width="120" height="20" rx="10" fill="#BFDBFE"/>
+  <rect x="310" y="536" width="92" height="20" rx="10" fill="#BFDBFE"/>
+  <rect x="310" y="574" width="136" height="20" rx="10" fill="#BFDBFE"/>
+  <rect x="560" y="392" width="496" height="240" rx="24" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="808" y="498" text-anchor="middle" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="32" fill="#64748B">실제 이미지 크롭 연결 예정</text>
+</svg>
