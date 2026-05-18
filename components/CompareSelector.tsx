@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { DesignCase } from "@/types/case";
 import { Card } from "@/components/ui/card";
 
@@ -18,6 +18,10 @@ export function CompareSelector({
     [fallbackIds, initialIds]
   );
   const [selectedIds, setSelectedIds] = useState<string[]>(defaultIds);
+
+  useEffect(() => {
+    setSelectedIds(defaultIds);
+  }, [defaultIds]);
 
   const toggle = (id: string) => {
     setSelectedIds((current) =>

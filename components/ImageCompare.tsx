@@ -13,7 +13,7 @@ export function ImageCompare({ images }: { images: CaseImages }) {
     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       {panels.map((image) => (
         <Card key={image.label} className="overflow-hidden">
-          <div className="relative h-72 w-full bg-slate-100">
+          <div className="relative h-64 w-full bg-slate-100 sm:h-72">
             <Image
               src={image.url!}
               alt={image.label}

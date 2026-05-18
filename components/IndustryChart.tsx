@@ -75,20 +75,23 @@ export function IndustryChart({
         <div className="mb-4">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">Dispute Mix</p>
           <h3 className="mt-1 text-lg font-semibold">분쟁 유형 분포</h3>
-          <p className="mt-2 text-xs text-slate-500">도넛 색상은 각 분쟁 유형을 뜻하고, 옆 범례에서 항목별 건수를 확인할 수 있습니다.</p>
+          <p className="mt-2 text-xs leading-5 text-slate-500">
+            도넛 차트는 각 분쟁 유형 비중을 보여주고, 오른쪽 범례에서 항목별 건수를 확인할 수 있습니다.
+          </p>
         </div>
-        <div className="grid gap-4 2xl:grid-cols-[1.35fr_0.85fr]">
-          <div className="h-80 rounded-[20px] bg-[linear-gradient(180deg,_rgba(49,94,251,0.05),_rgba(255,255,255,0.65))] p-4">
+
+        <div className="grid gap-4">
+          <div className="h-[320px] rounded-[20px] bg-[linear-gradient(180deg,_rgba(49,94,251,0.05),_rgba(255,255,255,0.65))] p-4">
             <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
+              <PieChart margin={{ top: 18, right: 22, bottom: 26, left: 22 }}>
                 <Pie
                   data={disputeData}
                   dataKey="value"
                   nameKey="name"
                   cx="50%"
-                  cy="52%"
-                  outerRadius={96}
-                  innerRadius={46}
+                  cy="50%"
+                  outerRadius={86}
+                  innerRadius={42}
                   label={({ percent }) => `${Math.round((percent ?? 0) * 100)}%`}
                   labelLine={false}
                 >
@@ -106,17 +109,17 @@ export function IndustryChart({
 
           <div className="rounded-[20px] border border-slate-200/80 bg-white/80 p-4">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Legend</p>
-            <div className="mt-3 grid gap-3 md:grid-cols-2 2xl:grid-cols-1">
+            <div className="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
               {disputeData.map((item, index) => (
-                <div key={item.name} className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
+                <div key={item.name} className="flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-3">
                     <span
-                      className="h-3.5 w-3.5 rounded-full"
+                      className="mt-1 h-3.5 w-3.5 shrink-0 rounded-full"
                       style={{ backgroundColor: legendColor(index) }}
                     />
-                    <span className="text-sm text-slate-700">{item.name}</span>
+                    <span className="text-sm leading-5 text-slate-700">{item.name}</span>
                   </div>
-                  <span className="text-sm font-medium text-slate-500">{item.value}건</span>
+                  <span className="shrink-0 text-sm font-medium text-slate-500">{item.value}건</span>
                 </div>
               ))}
             </div>
@@ -129,7 +132,9 @@ export function IndustryChart({
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">Result Flow</p>
             <h3 className="mt-1 text-lg font-semibold">판단 결과 분포</h3>
-            <p className="mt-2 text-xs text-slate-500">가로 막대의 길이는 각 판단 결과에 해당하는 사례 수를 의미합니다.</p>
+            <p className="mt-2 text-xs text-slate-500">
+              가로 막대 길이는 각 판단 결과에 해당하는 사례 수를 의미합니다.
+            </p>
           </div>
           <div className="rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs font-medium text-slate-600">
             막대 길이 = 사례 수(건)
