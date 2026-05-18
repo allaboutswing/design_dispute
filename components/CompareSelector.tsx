@@ -7,13 +7,15 @@ import { Card } from "@/components/ui/card";
 export function CompareSelector({
   allCases,
   initialIds,
+  fallbackIds,
 }: {
   allCases: DesignCase[];
   initialIds: string[];
+  fallbackIds: string[];
 }) {
   const defaultIds = useMemo(
-    () => (initialIds.length > 0 ? initialIds : allCases.slice(0, 2).map((item) => item.id)),
-    [allCases, initialIds]
+    () => (initialIds.length > 0 ? initialIds : fallbackIds),
+    [fallbackIds, initialIds]
   );
   const [selectedIds, setSelectedIds] = useState<string[]>(defaultIds);
 
