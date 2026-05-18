@@ -1,17 +1,48 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="900" rx="36" fill="#F8FAFF"/>
-  <rect x="54" y="54" width="1092" height="792" rx="28" fill="white" stroke="#D6E2FF" stroke-width="4"/>
-  <text x="600" y="122" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="34" font-weight="700" fill="#1E293B">알고케어 vs 롯데헬스케어</text>
-  <text x="600" y="164" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="24" fill="#64748B">AI 영양제 디스펜서 기술분쟁 조정 사례</text>
-  <rect x="110" y="230" width="410" height="420" rx="28" fill="#F3F7FF" stroke="#D6E2FF" stroke-width="4"/>
-  <rect x="680" y="230" width="410" height="420" rx="28" fill="#F5F8FF" stroke="#D6E2FF" stroke-width="4"/>
-  <circle cx="600" cy="440" r="74" fill="#152033"/>
-  <text x="600" y="455" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="42" font-weight="700" fill="white">VS</text>
-  <text x="315" y="292" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="34" font-weight="700" fill="#315EFB">알고케어</text>
-  <text x="885" y="292" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="34" font-weight="700" fill="#4F7DFF">롯데헬스케어</text>
-  <text x="315" y="340" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="22" fill="#475569">뉴트리션 엔진</text>
-  <text x="885" y="340" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="22" fill="#475569">CAZZLE / Fillkey</text>
-  <rect x="212" y="392" width="206" height="168" rx="32" fill="#315EFB" fill-opacity="0.12" stroke="#315EFB" stroke-width="6"/>
-  <rect x="782" y="392" width="206" height="168" rx="32" fill="#4F7DFF" fill-opacity="0.12" stroke="#4F7DFF" stroke-width="6"/>
-  <text x="600" y="746" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="26" fill="#334155">핵심 쟁점: 협업 미팅에서 공유된 아이디어·기술의 부정사용 여부</text>
+  <rect width="1200" height="900" rx="32" fill="#F5F5F3"/>
+  <rect x="46" y="46" width="1108" height="808" rx="28" fill="#FFFDF9" stroke="#D9D4CA" stroke-width="4"/>
+
+  <rect x="86" y="98" width="422" height="542" rx="16" fill="#F4EEE2"/>
+  <rect x="694" y="98" width="420" height="542" rx="16" fill="#EEF3EE"/>
+
+  <g transform="translate(120 132) scale(0.72)">
+    <ellipse cx="320" cy="510" rx="190" ry="36" fill="#D8D0C3"/>
+    <rect x="140" y="72" width="360" height="320" rx="56" fill="#F7F8FA" stroke="#C8CDD6" stroke-width="6"/>
+    <path d="M170 136C170 91.817 205.817 56 250 56H390C434.183 56 470 91.817 470 136V196C470 240.183 434.183 276 390 276H250C205.817 276 170 240.183 170 196V136Z" fill="#EFF2F6" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="232" cy="120" r="52" fill="#FFFFFF" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="322" cy="146" r="58" fill="#F8FAFC" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="410" cy="120" r="52" fill="#FFFFFF" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="248" cy="220" r="52" fill="#FFFFFF" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="398" cy="218" r="52" fill="#FFFFFF" stroke="#C8CDD6" stroke-width="6"/>
+    <rect x="400" y="12" width="70" height="108" rx="28" fill="#FFFFFF" stroke="#C8CDD6" stroke-width="6"/>
+    <circle cx="323" cy="175" r="12" fill="#D94B45"/>
+  </g>
+
+  <g transform="translate(694 120) scale(0.72)">
+    <ellipse cx="300" cy="520" rx="210" ry="34" fill="#D7DDD7"/>
+    <circle cx="300" cy="270" r="222" fill="#111111"/>
+    <circle cx="300" cy="270" r="198" fill="#1F2937"/>
+    <circle cx="300" cy="270" r="154" fill="#2B3648"/>
+    <circle cx="300" cy="270" r="36" fill="#111827"/>
+    <path d="M300 116L328 234L450 234L352 304L390 424L300 346L210 424L248 304L150 234L272 234L300 116Z" fill="#0F172A"/>
+    <circle cx="206" cy="188" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="300" cy="160" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="394" cy="188" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="444" cy="286" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="362" cy="378" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="238" cy="378" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="156" cy="286" r="52" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="6"/>
+    <circle cx="300" cy="270" r="14" fill="#D94B45"/>
+  </g>
+
+  <path d="M473 238C584 162 614 162 728 238" stroke="#CC7C74" stroke-width="4" stroke-linecap="round"/>
+  <path d="M470 318C587 294 614 294 731 318" stroke="#CC7C74" stroke-width="4" stroke-linecap="round"/>
+  <path d="M465 426C588 457 615 457 736 426" stroke="#CC7C74" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="600" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#7C2D12">slot</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#7C2D12">guide part</text>
+  <text x="600" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#7C2D12">sensor</text>
+
+  <text x="298" y="718" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">[롯데의 디스펜서]</text>
+  <text x="904" y="718" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">[알고케어의 디스펜서]</text>
 </svg>

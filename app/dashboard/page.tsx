@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
-import { getAllCases, getFilterOptions, getIndustryStats } from "@/lib/cases";
+import { getAllCases, getFeaturedCases, getFilterOptions, getIndustryStats } from "@/lib/cases";
 
 export default function DashboardPage() {
   const cases = getAllCases();
+  const featuredCases = getFeaturedCases(1);
   const options = getFilterOptions();
   const stats = getIndustryStats();
-
-  const latestCase = [...cases].sort((a, b) => b.decisionDate.localeCompare(a.decisionDate))[0];
+  const highlightedCase = featuredCases[0] ?? cases[0];
 
   return (
     <div className="space-y-6">
@@ -16,7 +16,7 @@ export default function DashboardPage() {
         <h1 className="mt-1 text-3xl font-semibold">사례 데이터 한눈에 보기</h1>
       </section>
 
-      <div className="grid gap-4 lg:grid-cols-4">
+      <div className="grid gap-4 lg:grid-cols-3">
         <Card className="p-6">
           <p className="text-sm text-slate-500">전체 사례</p>
           <p className="mt-2 text-3xl font-semibold">{cases.length}</p>
@@ -28,10 +28,6 @@ export default function DashboardPage() {
         <Card className="p-6">
           <p className="text-sm text-slate-500">분쟁 유형</p>
           <p className="mt-2 text-3xl font-semibold">{options.disputeTypes.length}</p>
-        </Card>
-        <Card className="p-6">
-          <p className="text-sm text-slate-500">최근 결정일</p>
-          <p className="mt-2 text-lg font-semibold">{latestCase?.decisionDate || "-"}</p>
         </Card>
       </div>
 
@@ -63,19 +59,19 @@ export default function DashboardPage() {
 
         <Card className="p-6">
           <h2 className="text-lg font-semibold">대표 사례 하이라이트</h2>
-          {latestCase ? (
+          {highlightedCase ? (
             <>
-              <p className="mt-4 text-sm font-semibold text-brand-700">{latestCase.title}</p>
-              <p className="mt-3 text-sm leading-7 text-slate-600">{latestCase.issueSummary}</p>
+              <p className="mt-4 text-sm font-semibold text-brand-700">{highlightedCase.title}</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{highlightedCase.issueSummary}</p>
               <div className="mt-5 flex flex-wrap gap-2">
-                {latestCase.tags.map((tag) => (
+                {highlightedCase.tags.map((tag) => (
                   <span key={tag} className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">
                     #{tag}
                   </span>
                 ))}
               </div>
               <Link
-                href={`/cases/${latestCase.id}`}
+                href={`/cases/${highlightedCase.id}`}
                 className="mt-6 inline-flex rounded-xl bg-ink px-4 py-2 text-sm font-medium text-white"
               >
                 상세 보기

@@ -5,14 +5,14 @@ import { CaseCard } from "@/components/CaseCard";
 import { SearchBar } from "@/components/SearchBar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { getAllCases, getFeaturedCases, getIndustries } from "@/lib/cases";
+import { getAllCases, getCaseById, getFeaturedCases, getIndustries } from "@/lib/cases";
 
 export default function HomePage() {
   const cases = getAllCases();
   const featuredCases = getFeaturedCases();
   const industries = getIndustries();
-  const spotlightCase = featuredCases[0];
-  const todayLabel = "2026.05.17";
+  const spotlightCase = getCaseById("021") ?? featuredCases[0];
+  const todayLabel = "2026.05.18";
 
   return (
     <div className="space-y-10">
@@ -23,10 +23,10 @@ export default function HomePage() {
               <div>
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm text-slate-200">
                   <Sparkles className="h-4 w-4" />
-                  디자인 분쟁 사례 분석 플랫폼
+                  지적재산권 분쟁 사례 분석 플랫폼
                 </div>
-                <h1 className="max-w-3xl text-4xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-5xl">
-                  산업별 디자인 분쟁 사례를
+                <h1 className="max-w-[11ch] text-[3.15rem] font-semibold leading-[1.14] tracking-[-0.045em] sm:text-[4.05rem]">
+                  산업별 지적재산권 분쟁 사례를
                   <br />
                   더 빠르게 찾고 깊게 비교합니다
                 </h1>
@@ -70,7 +70,10 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-4">
-              <div className="rounded-[28px] border border-white/10 bg-white/6 p-4 backdrop-blur-md">
+              <Link
+                href={`/cases/${spotlightCase.id}`}
+                className="block rounded-[28px] border border-white/10 bg-white/6 p-4 backdrop-blur-md transition hover:border-white/20 hover:bg-white/8"
+              >
                 <div className="mb-4 flex items-start justify-between gap-3">
                   <div>
                     <p className="text-xs uppercase tracking-[0.24em] text-slate-300">Spotlight</p>
@@ -99,7 +102,7 @@ export default function HomePage() {
                     <p className="text-sm leading-7 text-slate-200">{spotlightCase.issueSummary}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="rounded-[24px] bg-white p-5 text-ink shadow-card">
@@ -149,7 +152,7 @@ export default function HomePage() {
         <div className="mb-5 flex items-end justify-between gap-3">
           <div>
             <p className="text-sm font-semibold text-brand-700">대표 사례</p>
-            <h2 className="mt-1 text-2xl font-semibold tracking-[-0.02em]">주요 디자인 분쟁 사례</h2>
+            <h2 className="mt-1 text-2xl font-semibold tracking-[-0.02em]">주요 지적재산권 분쟁 사례</h2>
           </div>
           <Link href="/cases" className="text-sm font-medium text-slate-600">
             전체 보기

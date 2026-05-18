@@ -1,16 +1,42 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="900" rx="36" fill="#F8FAFF"/>
-  <rect x="54" y="54" width="1092" height="792" rx="28" fill="white" stroke="#D6E2FF" stroke-width="4"/>
-  <rect x="96" y="96" width="180" height="44" rx="22" fill="#E7EEFF"/>
-  <text x="186" y="125" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#315EFB">원고 디자인</text>
-  <text x="96" y="205" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="56" font-weight="700" fill="#1E293B">알고케어</text>
-  <text x="96" y="255" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="28" fill="#475569">Nutrition Engine / 뉴트리션 엔진</text>
-  <rect x="96" y="320" width="1008" height="420" rx="28" fill="#F3F7FF" stroke="#D6E2FF" stroke-width="4"/>
-  <rect x="210" y="390" width="240" height="220" rx="44" fill="#315EFB" fill-opacity="0.10" stroke="#315EFB" stroke-width="6"/>
-  <rect x="498" y="420" width="132" height="92" rx="24" fill="#315EFB"/>
-  <rect x="690" y="390" width="240" height="220" rx="44" fill="#315EFB" fill-opacity="0.10" stroke="#315EFB" stroke-width="6"/>
-  <line x1="474" y1="500" x2="498" y2="500" stroke="#315EFB" stroke-width="10" stroke-linecap="round"/>
-  <line x1="630" y1="500" x2="654" y2="500" stroke="#315EFB" stroke-width="10" stroke-linecap="round"/>
-  <text x="570" y="570" text-anchor="middle" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#315EFB">개인 맞춤형 영양제 디스펜서</text>
-  <text x="96" y="792" font-family="Arial, Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="24" fill="#64748B">기사 및 정리문서 기반 도식화 이미지</text>
+  <defs>
+    <linearGradient id="algocareBg" x1="92" y1="92" x2="1108" y2="808" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2F7"/>
+    </linearGradient>
+    <linearGradient id="algocareBody" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#E5E7EB"/>
+      <stop offset="1" stop-color="#C9CDD3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="32" fill="#EEF2F6"/>
+  <rect x="52" y="52" width="1096" height="796" rx="28" fill="url(#algocareBg)" stroke="#D5DCE5" stroke-width="4"/>
+  <rect x="86" y="86" width="164" height="42" rx="21" fill="#E8EDF3"/>
+  <text x="168" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#334155">PLAINTIFF</text>
+  <text x="86" y="182" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#111827">Algocare</text>
+
+  <rect x="120" y="700" width="960" height="92" rx="24" fill="white" fill-opacity="0.78"/>
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">알고케어</text>
+
+  <rect x="672" y="248" width="330" height="246" rx="70" fill="url(#algocareBody)"/>
+  <rect x="692" y="486" width="288" height="44" rx="22" fill="#F4D84C"/>
+  <ellipse cx="835" cy="612" rx="208" ry="54" fill="#ECEBE6"/>
+  <rect x="694" y="536" width="282" height="118" rx="56" fill="#F8F8F7"/>
+
+  <ellipse cx="840" cy="700" rx="212" ry="50" fill="#F4F1EA"/>
+  <rect x="650" y="620" width="380" height="96" rx="48" fill="#F7F2E7"/>
+  <rect x="984" y="646" width="116" height="26" rx="13" fill="#A36C39"/>
+
+  <path d="M760 574C779 548 818 536 858 540C901 544 935 565 950 602C964 637 949 670 911 686C872 702 809 702 772 678C735 654 728 617 760 574Z" fill="none" stroke="#D4C09A" stroke-width="5"/>
+  <rect x="774" y="574" width="168" height="108" rx="26" fill="rgba(255,255,255,0.32)" stroke="#CFC5AE" stroke-width="4"/>
+  <circle cx="856" cy="628" r="31" fill="#111827"/>
+  <text x="856" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="white">a</text>
+  <circle cx="785" cy="612" r="7" fill="#EACB55"/>
+  <circle cx="810" cy="592" r="7" fill="#D9C6A4"/>
+  <circle cx="836" cy="604" r="7" fill="#E7D57A"/>
+  <circle cx="878" cy="588" r="7" fill="#E5C1B6"/>
+  <circle cx="907" cy="610" r="7" fill="#F2D68A"/>
+  <circle cx="922" cy="636" r="7" fill="#E7D57A"/>
+  <circle cx="888" cy="652" r="7" fill="#DCC8A5"/>
+  <circle cx="820" cy="648" r="7" fill="#EBCF88"/>
 </svg>

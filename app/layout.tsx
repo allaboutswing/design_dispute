@@ -4,8 +4,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "디자인 분쟁 사례 분석 플랫폼",
-  description: "산업별 디자인분쟁 사례를 검색, 비교, 분석할 수 있는 디자인 분쟁 사례 분석 플랫폼",
+  title: "지적재산권 분쟁 사례 분석 플랫폼",
+  description: "산업별 지적재산권 분쟁 사례를 검색, 비교, 분석할 수 있는 지적재산권 분쟁 사례 분석 플랫폼",
 };
 
 const navItems = [
@@ -31,7 +31,7 @@ export default function RootLayout({
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#152033] shadow-[0_10px_30px_rgba(21,32,51,0.18)]">
                   <Image
                     src="/brand/brand-icon.svg"
-                    alt="디자인 분쟁 사례 분석 플랫폼 아이콘"
+                    alt="지적재산권 분쟁 사례 분석 플랫폼 아이콘"
                     width={34}
                     height={34}
                     className="h-8 w-8"
@@ -39,7 +39,7 @@ export default function RootLayout({
                   />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-brand-700">디자인 분쟁 사례 분석 플랫폼</p>
+                  <p className="text-sm font-semibold text-brand-700">지적재산권 분쟁 사례 분석 플랫폼</p>
                 </div>
               </Link>
               <nav className="flex flex-wrap items-center gap-2 text-sm">
