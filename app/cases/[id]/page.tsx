@@ -87,9 +87,29 @@ export default async function CaseDetailPage({ params }: DetailPageProps) {
 
       <Card className="p-6">
         <h2 className="text-lg font-semibold">출처</h2>
-        <p className="mt-4 text-sm text-slate-700">
-          산업별 디자인분쟁 사례집, {item.sourcePages.join(", ")}쪽
-        </p>
+        <div className="mt-4 space-y-3 text-sm text-slate-700">
+          <p>
+            {item.sourceLabel
+              ? item.sourceLabel
+              : `산업별 디자인분쟁 사례집, ${item.sourcePages.join(", ")}쪽`}
+          </p>
+          {item.sourceLinks?.length ? (
+            <ul className="space-y-2">
+              {item.sourceLinks.map((link) => (
+                <li key={link.url}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-brand-700 underline underline-offset-4"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
       </Card>
     </div>
   );

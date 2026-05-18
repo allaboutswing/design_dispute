@@ -8,6 +8,7 @@ const badgeMap: Record<string, string> = {
   "권리범위 속하지 않음": "bg-slate-100 text-slate-700 border border-slate-200",
   "침해 인정": "bg-emerald-50 text-success border border-emerald-200",
   "침해 부정": "bg-rose-50 text-danger border border-rose-200",
+  "조정 성립": "bg-violet-50 text-violet-700 border border-violet-200",
   "디자인 보호 쟁점": "bg-orange-50 text-warning border border-orange-200",
 };
 

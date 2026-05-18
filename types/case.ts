@@ -4,6 +4,11 @@ export type CaseImages = {
   comparisonImage?: string;
 };
 
+export type CaseSourceLink = {
+  label: string;
+  url: string;
+};
+
 export type DesignCase = {
   id: string;
   title: string;
@@ -25,6 +30,8 @@ export type DesignCase = {
   differenceFactors: string[];
   keyTakeaway: string;
   sourcePages: number[];
+  sourceLabel?: string;
+  sourceLinks?: CaseSourceLink[];
   images: CaseImages;
   tags: string[];
 };
