@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Building2, CalendarDays, Scale, Search, Sparkles } from "lucide-react";
+import { ArrowRight, Building2, CalendarDays, Scale, Sparkles } from "lucide-react";
 import { CaseCard } from "@/components/CaseCard";
-import { SearchBar } from "@/components/SearchBar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { getAllCases, getCaseById, getFeaturedCases, getFilterOptions } from "@/lib/cases";
@@ -12,7 +11,7 @@ export default function HomePage() {
   const featuredCases = getFeaturedCases();
   const spotlightCase = getCaseById("021") ?? featuredCases[0];
   const options = getFilterOptions();
-  const todayLabel = "2026.05.18";
+  const todayLabel = "2026.05.20";
 
   return (
     <div className="space-y-8 sm:space-y-10">
@@ -26,37 +25,42 @@ export default function HomePage() {
                   지적재산권 분쟁 사례 분석 플랫폼
                 </div>
 
-                <h1 className="max-w-[8.5ch] text-[2.65rem] font-semibold leading-[1.06] tracking-[-0.055em] sm:text-[3.8rem] xl:text-[4.7rem]">
-                  산업별 지적재산권 분쟁 사례를
-                  <br />
-                  더 빠르게 찾고 깊게 비교합니다
+                <h1 className="max-w-[18ch] text-2xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-3xl lg:text-4xl">
+                  산업별 지적재산권 분쟁 사례를 한눈에 비교하고 빠르게 찾아보세요
                 </h1>
 
-                <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300 sm:mt-6 sm:text-[15px] sm:leading-8">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
                   법률 실무, 기업 IP 전략, 디자인 연구를 위해 사건별 쟁점과 유사·차이 요소를 한 화면에서
                   확인할 수 있도록 설계했습니다.
                 </p>
 
-                <form action="/cases" method="get" className="mt-8 max-w-2xl">
-                  <div className="rounded-[28px] bg-white/95 p-2 shadow-[0_18px_38px_rgba(0,0,0,0.14)]">
-                    <SearchBar />
-                  </div>
-                  <div className="mt-4 flex flex-wrap gap-3">
-                    <Button type="submit">
-                      <Search className="mr-2 h-4 w-4" />
-                      사례 검색
+                <p className="mt-6 text-sm text-slate-300">키워드, 쟁점, 태그로 검색가능합니다.</p>
+
+                <div className="mt-5 overflow-hidden rounded-[24px] border border-white/10 bg-white/8 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
+                  <Image
+                    src="/brand/ip_1.jpeg"
+                    alt="지적재산권 문서와 설계 도면이 놓인 책상"
+                    width={960}
+                    height={640}
+                    priority
+                    className="h-[220px] w-full object-cover sm:h-[260px] lg:h-[300px]"
+                  />
+                </div>
+
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <Link href="/cases">
+                    <Button>사례 검색</Button>
+                  </Link>
+                  <Link href="/analytics">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="border-white/20 bg-white/10 text-white hover:bg-white/16 hover:text-white"
+                    >
+                      대시보드 보기
                     </Button>
-                    <Link href="/analytics">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className="border-white/20 bg-white/10 text-white hover:bg-white/16 hover:text-white"
-                      >
-                        대시보드 보기
-                      </Button>
-                    </Link>
-                  </div>
-                </form>
+                  </Link>
+                </div>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-2">
